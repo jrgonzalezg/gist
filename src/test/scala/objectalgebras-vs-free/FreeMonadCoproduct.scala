@@ -14,7 +14,7 @@ programs that are interpretation free.
 IMPORTANT: Compare this pattern with the one described on
 `ObjectAlgebrasMultipleEffects.scala`
 */
-class FreeMonadCoproduct extends App {
+object FreeMonadCoproduct extends App {
 
   // As always we define our `Functor`, representing File System operations.
   sealed abstract class FSF[_]
@@ -110,5 +110,3 @@ class FreeMonadCoproduct extends App {
   EvalInstanceWithCoproduct.Test()
 
 }
-
-object FreeMonadCoproduct extends FreeMonadCoproduct
